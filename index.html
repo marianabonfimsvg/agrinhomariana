@@ -28,5 +28,66 @@
     <p>Hoje vou falar sobre um tema superimportante: o uso da energia eólica (do vento) e solar (do sol) em áreas rurais.
          Muitas pessoas no campo ainda não têm acesso à energia elétrica, ou dependem de geradores a diesel, que são caros e poluem. 
          A energia renovável pode mudar isso! Vamos entender como?</p>
+          <div class="btn-container">
+        <button class="btn" onclick="toggleContent(1)">1. Como Funcionam as Energias Eólica e Solar?</button>
+        <div class="content" id="content1">
+            <h2>Energia Eólica</h2>
+            <p><span class="highlight">O que é?</span> São aqueles cataventos gigantes (aerogeradores) que transformam o vento em energia.</p>
+            <p><span class="highlight">Onde funciona melhor?</span> Em lugares com muito vento, como sertões e regiões litorâneas.</p>
+            
+            <p><span class="highlight">Vantagens:</span></p>
+            <ul>
+                <li>Não polui.</li>
+                <li>Depois de instalado, o custo é baixo.</li>
+            </ul>
+            
+            <p><span class="highlight">Desvantagens:</span></p>
+            <ul>
+                <li>Precisa de espaço.</li>
+                <li>Se não tiver vento, não gera energia.</li>
+            </ul>
+        </div>
+        
+        <button class="btn" onclick="toggleContent(2)">2. Energia Solar</button>
+        <div class="content" id="content2">
+            <p><span class="highlight">O que é?</span> Painéis que captam a luz do sol e viram eletricidade.</p>
+            <p><span class="highlight">Onde funciona melhor?</span> Em lugares com muito sol (como o Nordeste do Brasil).</p>
+            
+            <p><span class="highlight">Vantagens:</span></p>
+            <ul>
+                <li>Pode ser instalado em qualquer lugar (até no telhado de uma casa).</li>
+                <li>Ótimo para lugares isolados.</li>
+            </ul>
+            
+            <p><span class="highlight">Desvantagens:</span></p>
+            <ul>
+                <li>À noite ou em dias nublados, precisa de baterias para armazenar energia.</li>
+            </ul>
+        </div>
+        
+        <button class="btn" onclick="toggleContent(3)">3. Por Que Usar Essas Energias no Campo?</button>
+        <div class="content" id="content3">
+            <p>No interior, muitas vezes não chega energia das grandes cidades. Mas com a energia eólica e solar, as comunidades rurais podem:</p>
+            <ul>
+                <li><span class="check">✔</span> Ter luz em casa (sem depender de velas ou lampiões).</li>
+                <li><span class="check">✔</span> Usar eletrodomésticos (geladeira, TV, ventilador).</li>
+                <li><span class="check">✔</span> Melhorar a agricultura (bombear água para plantar, manter alimentos refrigerados).</li>
+                <li><span class="check">✔</span> Ajudar escolas e postos de saúde (com computadores e freezers para vacinas).</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function toggleContent(number) {
+            const content = document.getElementById(`content${number}`);
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
 </body>
 </html>

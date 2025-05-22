@@ -1,0 +1,56 @@
+.titulo-holografico {
+  text-align: center;
+  margin: 0 auto;
+  width: fit-content;
+  
+  
+  font-size: 4rem; 
+  
+  
+  background: linear-gradient(
+    135deg,
+    #00ffff 0%,
+    #00ffaa 25%,
+    #00ff00 50%,
+    #aa00ff 75%,
+    #00aaff 100%
+  );
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  
+  text-shadow: 
+    0 0 5px rgba(0, 255, 255, 0.3),
+    0 0 10px rgba(0, 200, 255, 0.3),
+    0 0 20px rgba(0, 150, 255, 0.2);
+  
+  animation: holograma 8s ease infinite;
+  
+  font-weight: 800;
+  letter-spacing: 1px;
+  padding: 20px;
+  position: relative;
+}
+
+@keyframes holograma {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.titulo-holografico::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 1px solid transparent;
+  border-image: linear-gradient(135deg, #00ffff, #aa00ff) 1;
+  animation: borda-pulsante 4s ease infinite;
+  pointer-events: none;
+}
+
+@keyframes borda-pulsante {
+  0% { opacity: 0.3; }
+  50% { opacity: 1; }
+  100% { opacity: 0.3; }
+}

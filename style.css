@@ -11,9 +11,9 @@
     135deg,
     #00ffff 0%,
     #00ffaa 25%,
-    #00ff00 50%,
+    #ff004c 50%,
     #aa00ff 75%,
-    #00aaff 100%
+    #00ff88 100%
   );
   background-size: 300% 300%;
   -webkit-background-clip: text;
@@ -62,7 +62,7 @@
             background-color: #f0f8ff;
         }
         h1 {
-            color: #008b8b;
+            color: #007b8b;
             text-align: center;
             margin-bottom: 30px;
         }
@@ -114,6 +114,6 @@
             color: #008b8b;
         }
         .check {
-            color: #2e8b57;
+            color: #79375d;
             font-weight: bold;
         }

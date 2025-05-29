@@ -103,6 +103,7 @@
         .content h2 {
             color: #0b4085da;
             margin-top: 0;
+            font-size: 0.5;
         }
         .content ul {
             padding-left: 20px;
